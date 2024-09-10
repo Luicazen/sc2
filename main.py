@@ -1,8 +1,9 @@
+import math
 def feet_to_meters(value):
-    return value * 0.3048
+    return math.ceil(value * 0.3048 * 100) / 100
 
 def meters_to_feet(value):
-    return value / 0.3048
+    return math.ceil(value / 0.3048 * 100) / 100
 
 choice = input('f2m or m2f? ')
 value = float(input('? '))
